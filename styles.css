@@ -1,0 +1,130 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px, 0px;
+    margin: 0px;
+    background-color: #1d0d26;
+    color: white;
+}
+main{
+    margin: 1em;
+    padding: 1em 2em;
+    text-align: center;
+}
+h2{
+    letter-spacing: 2px;
+}
+.title{
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    width: 55%;
+    margin: auto;
+    margin-bottom: 30px;
+    color: #1d0d26;
+}
+#bird{
+    width: 24%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 20px 0px;
+}
+.listContainer{
+    width: 45%;
+    margin: auto;
+    border: 2px solid rgb(235, 235, 235);
+    box-shadow: 3px 3px rgb(235, 235, 235);
+}
+.contacts{
+    text-align: left;
+    font-size: 1em;
+    display: inline-block;
+    list-style-type: circle;
+    
+}
+.contacts li{
+    margin-bottom: 9px;
+    width: auto;
+    /*word-wrap: break-word;*/
+    word-break: break-all;
+}
+a{
+    color:rgb(112, 170, 255); /*the default link color isn't very visible on a dark background*/
+}
+.flexBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+.item{
+    width: 45%;
+    height: 60%;
+    margin: 20px;
+    border: 2px solid rgb(235, 235, 235);
+    box-shadow: 3px 3px rgb(235, 235, 235);
+    padding: 15px 0px 0px 0px;
+}
+.item img{
+    width: 80%;
+    height: auto;
+}
+.item p{
+    border-top: 2px solid rgb(235, 235, 235);
+    padding: 10px 10px 0px 10px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    gap: 25px; 
+}
+.container p{
+    grid-column: 2 / 3;
+}
+.container img{
+    max-width: 100%;
+    height: auto;
+    grid-column: 3 / 3;
+}
+
+/* navbar */
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #331742;
+}
+nav ul li{
+    float: left;
+}
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 20px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: rgb(235, 235, 235);
+}
+.activePage{
+    background-color: rgb(235, 235, 235);
+    color: #331742;
+    font-weight: bold;
+}
+nav ul li a:hover:not(.activePage) {
+    background-color: #111;
+}
+@media only screen and (max-width: 600px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    nav ul li {
+        float: none;
+    }
+    nav ul li a{
+        width: 90%;
+    }
+}
