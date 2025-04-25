@@ -31,6 +31,8 @@ h2{
     margin-right: auto;
     padding: 0px 0px 20px 0px;
 }
+
+/* contact specific */
 .listContainer{
     width: 45%;
     margin: auto;
@@ -53,6 +55,8 @@ h2{
 a{
     color:rgb(112, 170, 255); /*the default link color isn't very visible on a dark background*/
 }
+
+/* projects specific */
 .flexBox{
     display: flex;
     flex-wrap: wrap;
@@ -65,15 +69,23 @@ a{
     border: 2px solid rgb(235, 235, 235);
     box-shadow: 3px 3px rgb(235, 235, 235);
     padding: 15px 0px 0px 0px;
+    background-color: #160a1c;
 }
 .item img{
-    width: 80%;
-    height: auto;
+    width: 85%;
+    height: 400px;
 }
 .item p{
     border-top: 2px solid rgb(235, 235, 235);
     padding: 10px 10px 0px 10px;
 }
+@media only screen and (max-width: 600px) {
+    .item {
+        width: 95%;
+    }
+}
+
+/* about specific */
 .container{
     display: grid;
     grid-template-columns: 1fr 3fr 3fr 1fr;
